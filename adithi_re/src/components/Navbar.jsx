@@ -29,11 +29,11 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        {/* Aditi logo (center on mobile, left on desktop) */}
+        {/* Aditi logo image (center on mobile, left on desktop) */}
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-xl sm:text-2xl font-bold text-black inline-block">
-            aditi
-          </h1>
+          <a href="/" className="inline-block">
+            <img src="/logo.png" alt="Aditi Logo" className="h-8 sm:h-10" />
+          </a>
         </div>
         {/* Cart Icon (right on mobile) */}
         <div className="md:hidden">
@@ -50,6 +50,7 @@ function Navbar() {
           <li className="my-2 md:my-0">
             <Link to="/account" className="text-gray-700 hover:text-red-500 block md:hidden">
               <UserIcon className="w-6 h-6 inline-block" />
+              <span className="block text-xs text-gray-500">John</span>
             </Link>
           </li>
           <li className="my-2 md:my-0">
@@ -90,6 +91,7 @@ function Navbar() {
           <li className="my-2 md:my-0">
             <Link to="/account" className="text-gray-700 hover:text-red-500 hidden md:block">
               <UserIcon className="w-6 h-6 inline-block" />
+              <span className="block text-xs text-gray-500">John</span>
             </Link>
           </li>
         </ul>
